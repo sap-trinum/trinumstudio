@@ -1,0 +1,290 @@
+/* ===========================
+   ANIMATION.CSS
+   TRINUMSTUDIO PREMIUM
+=========================== */
+
+
+/* ===========================
+   ANIMATION D'APPARITION
+=========================== */
+
+@keyframes apparition{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero-text{
+
+    animation:apparition 1s ease;
+
+}
+
+.hero-image{
+
+    animation:apparition 1.3s ease;
+
+}
+
+
+
+/* ===========================
+   BOUTONS
+=========================== */
+
+.btn{
+
+    transition:all .3s ease;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(37,99,235,.30);
+
+}
+
+
+
+/* ===========================
+   CARTES
+=========================== */
+
+.card,
+.project-card,
+.price-card,
+.blog-card,
+.why-card{
+
+    transition:all .35s ease;
+
+}
+
+.card:hover,
+.project-card:hover,
+.price-card:hover,
+.blog-card:hover,
+.why-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+/* ===========================
+   IMAGES
+=========================== */
+
+.hero-image img,
+.project-card img,
+.blog-card img,
+.about-image img{
+
+    transition:all .5s ease;
+
+}
+
+.hero-image img:hover,
+.project-card img:hover,
+.blog-card img:hover,
+.about-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* ===========================
+   MENU
+=========================== */
+
+.nav-links li a{
+
+    transition:.3s;
+
+}
+
+.nav-links li a:hover{
+
+    color:var(--orange);
+
+}
+
+
+
+/* ===========================
+   LOGO
+=========================== */
+
+nav h1{
+
+    transition:.4s;
+
+}
+
+nav h1:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* ===========================
+   SCROLL REVEAL
+=========================== */
+
+.hero-text,
+.hero-image,
+.card,
+.project-card,
+.price-card,
+.blog-card,
+.contact,
+.about-text,
+.about-image,
+.why-card,
+.stat{
+
+    opacity:0;
+
+    transform:translateY(40px) scale(.95);
+
+    transition:all .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0) scale(1);
+
+}
+
+
+
+/* ===========================
+   STATISTIQUES
+=========================== */
+
+.stat{
+
+    transition:.4s;
+
+}
+
+.stat:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/* ===========================
+   FORMULAIRE
+=========================== */
+
+input,
+textarea{
+
+    transition:.3s;
+
+}
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:var(--bleu-principal);
+
+    box-shadow:0 0 10px rgba(37,99,235,.20);
+
+}
+
+
+
+/* ===========================
+   ICÔNES RÉSEAUX SOCIAUX
+=========================== */
+
+.social-links a{
+
+    transition:.3s;
+
+}
+
+.social-links a:hover{
+
+    transform:translateY(-5px) scale(1.1);
+
+}
+
+
+
+/* ===========================
+   LOADER
+=========================== */
+
+#loader{
+
+    transition:opacity .6s ease,
+               visibility .6s ease;
+
+}
+
+.loader-hidden{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+
+
+/* ===========================
+   COMPTEURS
+=========================== */
+
+.counter{
+
+    transition:.4s;
+
+}
+
+
+
+/* ===========================
+   DÉFILEMENT FLUIDE
+=========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}

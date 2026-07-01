@@ -1,0 +1,240 @@
+/* ===========================
+   RESPONSIVE DESIGN
+   TRINUMSTUDIO
+=========================== */
+
+
+/* Tablettes */
+
+@media (max-width: 900px){
+
+
+    nav{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+
+    nav ul{
+
+        flex-wrap:wrap;
+        justify-content:center;
+
+    }
+
+
+
+    .hero{
+
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+
+    }
+
+
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+
+
+    .hero-text h2{
+
+        font-size:38px;
+
+    }
+
+
+
+    .hero-image img{
+
+        width:350px;
+
+    }
+
+
+
+    .cards{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* Téléphones */
+
+@media (max-width:600px){
+
+
+
+    header{
+
+        padding:20px;
+
+    }
+
+
+
+    nav h1{
+
+        font-size:25px;
+
+    }
+
+
+
+    nav ul{
+
+        gap:15px;
+
+    }
+
+
+
+    nav ul li a{
+
+        font-size:14px;
+
+    }
+
+
+
+    .hero{
+
+        padding:50px 20px;
+
+    }
+
+
+
+    .hero-text h2{
+
+        font-size:30px;
+
+    }
+
+
+
+    .hero-text p{
+
+        font-size:16px;
+
+    }
+
+
+
+    .hero-image img{
+
+        width:280px;
+
+    }
+
+
+
+
+    .services{
+
+        padding:50px 20px;
+
+    }
+
+
+
+
+    .card{
+
+        width:90%;
+
+    }
+
+
+
+    .contact{
+
+        padding:50px 20px;
+
+    }
+
+
+
+}
+
+/* ===========================
+   MENU MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+
+nav{
+
+    flex-direction:row;
+    position:relative;
+
+}
+
+
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+
+
+
+.nav-links{
+
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+
+    background:white;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:20px;
+
+    display:none;
+
+}
+
+
+
+.nav-links.active{
+
+    display:flex;
+
+}
+
+
+
+
+.nav-links li{
+
+    margin:15px 0;
+
+}
+
+
+}
