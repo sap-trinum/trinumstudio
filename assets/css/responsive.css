@@ -3,238 +3,183 @@
    TRINUMSTUDIO
 =========================== */
 
+/* ===========================
+   TABLETTES
+=========================== */
 
-/* Tablettes */
-
-@media (max-width: 900px){
-
-
-    nav{
-
-        flex-direction:column;
-        gap:20px;
-
-    }
-
-
-    nav ul{
-
-        flex-wrap:wrap;
-        justify-content:center;
-
-    }
-
-
+@media (max-width:900px){
 
     .hero{
-
         flex-direction:column;
         text-align:center;
         gap:40px;
-
     }
-
-
 
     .hero-text{
-
         width:100%;
-
     }
-
-
 
     .hero-text h2{
-
         font-size:38px;
-
     }
-
-
 
     .hero-image img{
-
-        width:350px;
-
+        width:100%;
+        max-width:350px;
     }
 
-
-
-    .cards{
-
+    .cards,
+    .projects,
+    .pricing,
+    .statistics,
+    .footer-content{
         flex-direction:column;
         align-items:center;
-
     }
 
-
-
-}
-
-
-
-
-
-/* Téléphones */
-
-@media (max-width:600px){
-
-
-
-    header{
-
-        padding:20px;
-
+    .about{
+        flex-direction:column;
+        text-align:center;
     }
-
-
-
-    nav h1{
-
-        font-size:25px;
-
-    }
-
-
-
-    nav ul{
-
-        gap:15px;
-
-    }
-
-
-
-    nav ul li a{
-
-        font-size:14px;
-
-    }
-
-
-
-    .hero{
-
-        padding:50px 20px;
-
-    }
-
-
-
-    .hero-text h2{
-
-        font-size:30px;
-
-    }
-
-
-
-    .hero-text p{
-
-        font-size:16px;
-
-    }
-
-
-
-    .hero-image img{
-
-        width:280px;
-
-    }
-
-
-
-
-    .services{
-
-        padding:50px 20px;
-
-    }
-
-
-
-
-    .card{
-
-        width:90%;
-
-    }
-
-
-
-    .contact{
-
-        padding:50px 20px;
-
-    }
-
-
-
 }
 
 /* ===========================
-   MENU MOBILE
+   MOBILE
 =========================== */
 
+@media (max-width:768px){
 
-@media(max-width:768px){
+    header{
+        padding:15px 5%;
+    }
 
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:relative;
+    }
 
+    .menu-toggle{
+        display:block;
+        font-size:30px;
+        cursor:pointer;
+    }
 
-nav{
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#ffffff;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:20px 0;
+        list-style:none;
+        box-shadow:0 8px 20px rgba(0,0,0,.1);
+        z-index:999;
+    }
 
-    flex-direction:row;
-    position:relative;
+    .nav-links.active{
+        display:flex;
+    }
 
+    .nav-links li{
+        width:100%;
+    }
+
+    .nav-links li a{
+        display:block;
+        width:100%;
+        padding:12px;
+        text-decoration:none;
+    }
+
+    .hero{
+        padding:50px 20px;
+    }
+
+    .hero-text h2{
+        font-size:30px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-image img{
+        width:100%;
+        max-width:300px;
+    }
+
+    .card,
+    .project-card,
+    .price-card,
+    .blog-card{
+        width:95%;
+    }
+
+    .services,
+    .portfolio,
+    .pricing,
+    .blog,
+    .contact{
+        padding:50px 20px;
+    }
 }
 
+/* ===========================
+   BLOG MOBILE CORRECTION
+=========================== */
+
+@media (max-width:768px){
 
 
-.menu-toggle{
+    .blog{
 
-    display:block;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        padding:50px 20px;
+        gap:30px;
 
-}
-
-
-
-
-.nav-links{
-
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-
-    background:white;
-
-    flex-direction:column;
-
-    text-align:center;
-
-    padding:20px;
-
-    display:none;
-
-}
+    }
 
 
+    .blog-card{
 
-.nav-links.active{
+        width:100%;
+        max-width:350px;
+        text-align:center;
 
-    display:flex;
-
-}
-
-
+    }
 
 
-.nav-links li{
+    .blog-card img{
 
-    margin:15px 0;
+        width:100%;
+        height:auto;
+        border-radius:10px;
 
-}
+    }
+
+
+    .blog-card h3{
+
+        font-size:22px;
+
+    }
+
+
+    .blog-card p{
+
+        font-size:16px;
+        line-height:1.6;
+
+    }
 
 
 }

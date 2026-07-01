@@ -1514,43 +1514,8 @@ body{
 
 }
 
-@media(max-width:768px){
-
-
-.legal-section{
-
-padding:40px 5%;
-
-}
-
-
-.legal-container{
-
-padding:25px;
-
-border-radius:10px;
-
-}
-
-
-.legal-container h2{
-
-font-size:24px;
-
-}
-
-
-.legal-container p{
-
-font-size:16px;
-
-line-height:1.7;
-
-}
-
-
-}
-
+/* ===========================
+   
 /* ===========================
    PAGE 404
 =========================== */
